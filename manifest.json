@@ -1,0 +1,38 @@
+{
+  "author": "Dmytro Prokopenko",
+  "manifest_version": 3,
+  "name": "🔥 Bookmark Prepend/Remove extension for bookmarks promoting/unpromoting",
+  "version": "1.0",
+  "description": "Prepends or removes 🔥 emoji from bookmarks with hotkeys.",
+  "permissions": [
+    "bookmarks",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "commands": {
+    "prepend-emoji": {
+      "suggested_key": {
+        "default": "Alt+B",
+        "mac": "Alt+B"
+      },
+      "description": "Prepend 🔥 emoji to bookmark"
+    },
+    "remove-emoji": {
+      "suggested_key": {
+        "default": "Alt+Shift+B",
+        "mac": "Alt+Shift+B"
+      },
+      "description": "Remove 🔥 emoji from bookmark"
+    }
+  }
+}

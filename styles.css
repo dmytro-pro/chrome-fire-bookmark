@@ -1,0 +1,19 @@
+.bookmark-effect {
+    position: fixed;
+    font-size: 3rem;
+    z-index: 9999;
+    animation: fadeOut 0.3s ease-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
