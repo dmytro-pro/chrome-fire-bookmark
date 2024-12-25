@@ -22,15 +22,15 @@
   "commands": {
     "prepend-emoji": {
       "suggested_key": {
-        "default": "Alt+B",
-        "mac": "Alt+B"
+        "default": "Alt+F",
+        "mac": "Alt+F"
       },
       "description": "Prepend 🔥 emoji to bookmark"
     },
     "remove-emoji": {
       "suggested_key": {
-        "default": "Alt+Shift+B",
-        "mac": "Alt+Shift+B"
+        "default": "Alt+Shift+F",
+        "mac": "Alt+Shift+F"
       },
       "description": "Remove 🔥 emoji from bookmark"
     }
